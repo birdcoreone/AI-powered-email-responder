@@ -38,40 +38,39 @@ Ensure Python 3.12+ is installed.
 Then, install dependencies:
 ```bash
 pip install -r requirements.txt
+```
 
-### 3.2 Create .env File
-
-
-Create a .env file in the project root:
-
-OPENAI_API_KEY=your_openai_api_key_here
-
-This ensures your API key is not hardcoded in app.py.
-
-
+### 3.2 Clone Repository 
+```bash
 git clone https://github.com/<your-username>/AI-powered-email-responder.git
 cd AI-powered-email-responder
+```
 
-4. Create your .env file
+###3.3 Create .env File
 
-Create a .env file in the root directory with your OpenAI API key:
+Create a .env file in the project root:
+```bash
 OPENAI_API_KEY=your_openai_api_key_here
+```
+This ensures your API key is not hardcoded in main.py
 
 
-### 3.3 Running the FastAPI Server
+### 3.4 Running the FastAPI Server
 
 Start the server with:
 
 ```bash
 uvicorn app:app --reload
+```
 
 The API will be accessible at: http://127.0.0.1:8000/docs
 
-# 3.4 Optional Gradio GUI
+# 3.5 Optional Gradio GUI
 
 If using email_ui.py:
 ```bash
 python email_ui.py
+```
 
 This launches a user-friendly web interface to input customer emails and generate responses.
 
@@ -85,6 +84,7 @@ Request JSON Example:
   "email_content": "Hello, I am interested in your digital service packages for small businesses. Could you provide details?",
   "tone": "Formal"
 }
+```
 
 ### API Email Example
 ![API CustomerEmail](/docs/screenshots/Gui_interface.png)
@@ -96,6 +96,7 @@ Response JSON Example:
 {
   "response": "Subject: Re: Inquiry About Digital Services\n\nDear [Customer Name],\n\nThank you for your inquiry about our digital service packages for small businesses..."
 }
+```
 
 ### API Email Example
 ![API Response](/docs/screenshots/Response.png)
