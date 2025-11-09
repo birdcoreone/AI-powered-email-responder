@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ### 3.2 Clone Repository 
 ```bash
-git clone https://github.com/<your-username>/AI-powered-email-responder.git
+git clone https://github.com/birdcoreone/AI-powered-email-responder.git
 cd AI-powered-email-responder
 ```
 
